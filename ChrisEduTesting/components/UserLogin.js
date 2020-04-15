@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         backgroundColor: Colors.buttonBackground,
         width:'80%',
-        paddingVertical: 3,
+        paddingVertical: 10,
 
     },
     inputText:{
