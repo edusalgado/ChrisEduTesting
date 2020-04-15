@@ -4,16 +4,14 @@ import {AntDesign} from '@expo/vector-icons';
 import Colors from '../constants/Colors';
 const UserLogin = props => {
 
-    const [value, onChangeText] = useState('');
-
     return(
 
         <View style={styles.input}>
             <AntDesign style={styles.icon} name="user" size={20}/>
             <TextInput style={styles.inputText} 
-                placeholder="Enter user name"
-                onChangeText={text => onChangeText(text)}
-                value={value}
+                placeholder="Nombre de usuario"
+                onChangeText={props.onChangeText}
+                value={props.value}
             ></TextInput>
         </View>
 
@@ -35,7 +33,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     icon:{
-        marginHorizontal: 10,
+        marginHorizontal: 15,
         color: Colors.iconsColor,
     }
 
